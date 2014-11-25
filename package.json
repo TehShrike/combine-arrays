@@ -1,0 +1,26 @@
+{
+  "name": "combine-arrays",
+  "version": "1.0.0",
+  "description": "For people who hate for loops and want to iterate over multiple arrays with a single function",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TehShrike/combine-arrays.git"
+  },
+  "keywords": [
+    "array",
+    "functional"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/combine-arrays/issues"
+  },
+  "homepage": "https://github.com/TehShrike/combine-arrays",
+  "devDependencies": {
+    "tape": "^3.0.3"
+  }
+}
