@@ -8,7 +8,7 @@ Call this function to turn multiple arrays into one array.
 	var combine = require('combine-arrays')
 
 	var ary1 = ['what', 'what', 'in', 'the', 'butt']
-	var ary2 = ['ho', 'hi', 'hup', 'HAH', '...huh?']
+	var ary2 = ['ho', 'hi', 'hup', 'hurr', 'HAH', '...huh?']
 
 	var output = combine({
 		first: ary1,
