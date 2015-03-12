@@ -67,13 +67,18 @@ test('array example from the readme', function(t) {
 		['c', 'ci', 'cat', 'cool', 'chant']
 	])
 
-	t.deepEqual(output, [
+	var expectedOutput = [
 		[ 'a', 'b', 'c' ],
 		[ 'ax', 'be', 'ci' ],
 		[ 'app', 'bin', 'cat' ],
 		[ 'ache', undefined, 'cool' ],
 		[ 'anger', undefined, 'chant']
-	])
+	]
+
+	t.deepEqual(output, expectedOutput)
+
+	t.ok(Array.isArray(output), 'Output is an array')
+	t.equal(output.length, expectedOutput.length)
 
 	t.end()
 })
