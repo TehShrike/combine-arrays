@@ -1,6 +1,6 @@
 {
   "name": "combine-arrays",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "For people who hate for loops and want to iterate over multiple arrays with a single function",
   "main": "index.js",
   "scripts": {
