@@ -11,11 +11,11 @@ test('basic functionality: the example from the readme', function(t) {
 	})
 
 	t.deepEqual(output, [ { first: 'what', second: 'ho' },
-	     { first: 'what', second: 'hi' },
-	     { first: 'in', second: 'hup' },
-	     { first: 'the', second: 'hurr' },
-	     { first: 'butt', second: 'HAH' },
-	     { first: undefined, second: '...huh?' } ])
+		{ first: 'what', second: 'hi' },
+		{ first: 'in', second: 'hup' },
+		{ first: 'the', second: 'hurr' },
+		{ first: 'butt', second: 'HAH' },
+		{ first: undefined, second: '...huh?' } ])
 
 	t.end()
 })
@@ -56,6 +56,24 @@ test('throw an error on non-array', function(t) {
 			b: ['wat']
 		})
 	}, /a is not an array/)
+
+	t.end()
+})
+
+test('array example from the readme', function(t) {
+	var output = combine([
+		['a', 'ax', 'app', 'ache', 'anger'],
+		['b', 'be', 'bin'],
+		['c', 'ci', 'cat', 'cool', 'chant']
+	])
+
+	t.deepEqual(output, [
+		[ 'a', 'b', 'c' ],
+		[ 'ax', 'be', 'ci' ],
+		[ 'app', 'bin', 'cat' ],
+		[ 'ache', undefined, 'cool' ],
+		[ 'anger', undefined, 'chant']
+	])
 
 	t.end()
 })
