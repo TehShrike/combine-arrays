@@ -35,11 +35,11 @@ var output = combine([
 ])
 
 console.log(output)
-// [ [ 'a', 'b', 'c' ],
-//   [ 'ax', 'be', 'ci' ],
-//   [ 'app', 'bin', 'cat' ],
-//   [ 'ache', undefined, 'cool' ],
-//   [ 'anger', undefined, 'chant'] ]
+// [ { 0: 'a', 1: 'b', 2: 'c' },
+//   { 0: 'ax', 1: 'be', 2: 'ci' },
+//   { 0: 'app', 1: 'bin', 2: 'cat' },
+//   { 0: 'ache', 1: undefined, 2: 'cool' },
+//   { 0: 'anger', 1: undefined, 2: 'chant' } ]
 ```
 
 License
